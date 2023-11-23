@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity {
 
+    // declarando los controles
     private TextView TvRespuesta;
 
     private EditText Etnumero1,Etnumero2;
