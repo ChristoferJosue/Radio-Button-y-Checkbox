@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    android:background="@drawable/degradado"
+
+    >
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/LblTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OPERACIONES MATEMATICAS"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EtNumero1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:numeric="integer|decimal"
+        android:hint="Número 1"
+        android:textColor="@color/white" />
+    <EditText
+        android:id="@+id/EtNumero2"
+        android:layout_marginTop="40dp"
+        android:numeric="integer|decimal"
+        android:layout_marginLeft="30dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+
+        android:hint="Numero2"/>
+
+
+    <RadioButton
+        android:id="@+id/RbSumar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="SUMAR"/>
+    <RadioButton
+        android:id="@+id/RbRestar"
+
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="RESTAR"/>
+    <RadioButton
+        android:id="@+id/RbMultiplicar"
+
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="MULTIPLICAR"/>
+    <RadioButton
+        android:id="@+id/RbDividir"
+
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="DIVIDIR"/>
+
+<Button
+    android:id="@+id/BtnCalcular2"
+    android:layout_marginLeft="30dp"
+    android:layout_width="wrap_content"
+    android:text="CALCULAR"
+    android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/TvRespuesta"
+
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:text="RESPUESTA"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:id="@+id/BtnRegresar"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:text="REGRESAR"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Christofer González"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

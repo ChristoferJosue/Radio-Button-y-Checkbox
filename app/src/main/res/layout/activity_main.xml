@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+
+    >
+    <ImageButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnSalir"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pngegg__1_" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/LblTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Laboratorio #6"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/LblIndicaciones"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Seleccione los productos a Comprar"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/LblCantidad"
+        android:text="Cantidad"
+        android:layout_marginLeft="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/CbManzana"
+
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </CheckBox>
+
+            <TextView
+                android:id="@+id/TvManzana"
+                android:textColor="@color/white"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Manzana $0.40" />
+
+            <EditText
+                android:id="@+id/EtManzana"
+                android:textColor="@color/white"
+                android:layout_width="200dp"
+                android:numeric="integer"
+                android:layout_height="match_parent"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/CbNaranja"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </CheckBox>
+
+            <TextView
+                android:id="@+id/TvNaranja"
+                android:layout_width="120dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Naranja $0.50" />
+
+            <EditText
+                android:id="@+id/EtNaranja"
+                android:layout_width="200dp"
+                android:numeric="integer"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/CbPera"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </CheckBox>
+            <TextView
+                android:id="@+id/TvPera"
+                android:layout_width="120dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Pera $0.30"
+                />
+            <EditText
+                android:id="@+id/EtPera"
+                android:textColor="@color/white"
+                android:layout_width="200dp"
+                android:numeric="integer"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/CbBanana"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </CheckBox>
+            <TextView
+                android:id="@+id/TvBanana"
+                android:layout_width="120dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Banana $0.30"
+                />
+
+            <EditText
+                android:id="@+id/EtBanana"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:numeric="integer"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/TvTotal"
+        android:layout_marginLeft="30dp"
+        android:layout_width="220dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Total:">
+
+
+    </TextView>
+    <Button
+        android:id="@+id/BtnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR"/>
+
+
+
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/BtnSiguiente"
+        android:layout_marginLeft="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="SIGUIENTE" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Christofer González"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
